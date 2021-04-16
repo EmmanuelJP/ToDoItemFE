@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Getting Started</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+  <body>
+    <section id="app">
+      <h3>Lesson 1</h3>
+      <lesson-one
+        :title="lesson1.title"
+        :text="lesson1.text"
+        :seen="lesson1.seen"
+      ></lesson-one>
+
+      <h3>Lesson 2</h3>
+      <lesson-two :items="lesson2.items"></lesson-two>
+
+      <h3>Lesson 3</h3>
+      <lesson-three :message="lesson3.message"></lesson-three>
+
+      <h3>Lesson 4</h3>
+      <lesson-four @writed="onWrited"></lesson-four>
+    </section>
+    <script src="./js/components/lesson1.js"></script>
+    <script src="./js/components/lesson2.js"></script>
+    <script src="./js/components/lesson3.js"></script>
+    <script src="./js/components/lesson4.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
